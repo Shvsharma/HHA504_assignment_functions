@@ -3,6 +3,7 @@ name: Daily Cron Job
 on:
   schedule:
     - cron: "0 0 * * *"  # Every day at midnight (UTC)
+  workflow_dispatch:  # This allows you to manually trigger the workflow
 
 jobs:
   log-message:
